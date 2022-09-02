@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://beta.torii-srs.com" target="_blank">
+    <img src="https://user-images.githubusercontent.com/8210657/188132069-ae5edce9-85c3-4aac-b03b-a7d760c7a21e.png" width="128">
+  </a>
+</p>
+
 ## Issue and feature request tracker for the Torii SRS Web App.
 
 ### IMPORTANT INFORMATION
@@ -7,4 +13,4 @@
 
 ### Questions
 
-For help, support and general questions, please use our community chat. The issue list of this repo is **exclusively** for reporting bugs, suggesting enhancements and requesting features.
+For help, support and general questions, please use the contact form in the web app or contact us at support@torii-srs.com. The issue list of this repo is **exclusively** for reporting bugs, suggesting enhancements and requesting features.
