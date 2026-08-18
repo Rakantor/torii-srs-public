@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Knowledge Base — how Torii works
+    url: https://app.torii-srs.com/faq
+    about: Searchable answers on lessons, reviews, the SRS stages, offline mode and accounts. Start here for questions.
+  - name: Account, payments or your data
+    url: https://app.torii-srs.com/faq#still-stuck
+    about: Anything needing your email address. Issues here are public, so please write to us instead.
+  - name: Anything else
+    url: https://app.torii-srs.com/faq#still-stuck
+    about: No account, or nothing above fits. We read every one.

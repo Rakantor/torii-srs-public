@@ -1,0 +1,57 @@
+name: Feature request
+description: Suggest something new, or a change to how something works.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are welcome, and the good ones usually start from a real annoyance rather than a
+        feature name — so tell us what's in your way, not only what to build.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you post
+      options:
+        - label: I searched the existing issues, including closed ones.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's the problem?
+      description: What are you trying to do, and where does Torii get in the way?
+      placeholder: I study on the train and lose my place whenever the tunnel kills the connection.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like Torii to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you handle it today?
+      description: Workarounds tell us how much the current behaviour costs you.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the app?
+      options:
+        - Reviews
+        - Lessons
+        - Self-study
+        - Dashboard
+        - Browse
+        - Add words
+        - Stats
+        - Settings
+        - Offline & syncing
+        - Something else / the whole app
+    validations:
+      required: true

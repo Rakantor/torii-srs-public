@@ -1,0 +1,130 @@
+name: Bug report
+description: Something in the Torii web app is broken or behaving strangely.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Two quick things that fix many reports:
+        **reload the page**, and check the **cloud icon** at the foot of the navigation menu —
+        items queued there mean you're offline or the server is out of reach.
+
+        Still broken? Fill this in. The [Knowledge Base](https://app.torii-srs.com/faq) covers
+        the common ones if you'd rather check first.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you post
+      options:
+        - label: I searched the existing issues, including closed ones.
+          required: true
+        - label: I reloaded the page and it still happens.
+          required: true
+        - label: I'm not in a private/incognito window (Torii can't start in one).
+          required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you saw, in your own words.
+      placeholder: The answer field stopped accepting input after I got a word wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Enough that we can do the same thing and watch it break.
+      placeholder: |
+        1. Start a review session
+        2. Answer a meaning question wrong
+        3. Press Enter to continue
+        4. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in the app?
+      options:
+        - Reviews
+        - Lessons
+        - Self-study
+        - Dashboard
+        - Browse
+        - Add words
+        - Stats
+        - Settings
+        - Sign-in / sign-up
+        - Knowledge Base
+        - Support Torii / membership
+        - Somewhere else
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Brave / Vivaldi / Arc
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device, OS and browser version
+      placeholder: iPhone 14, iOS 18.3, Safari 18
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: How were you using Torii?
+      options:
+        - In a browser tab
+        - Installed as an app (added to home screen / desktop)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: conditions
+    attributes:
+      label: Anything true at the time?
+      options:
+        - label: I was offline, or my connection was unreliable.
+        - label: It happens every time.
+        - label: It started after a recent update.
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
+      description: Drag images straight in. A screenshot of the moment it went wrong is worth a lot.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Got an account?** The in-app contact form (*Knowledge Base → Still stuck?*) can attach a
+        diagnostics file — a record of what the app did on your device, with no email address and
+        nothing you wrote in it. Send it there rather than here (this tracker is public) and
+        mention the issue number.
